@@ -431,7 +431,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  margin-bottom: 16px;
 }
 
 .footer-container {
@@ -609,11 +608,19 @@ button {
   width: 24px;
   height: 24px;
   background-color: #e7e9fc;
-  border: 1px rgba(0, 0, 0, 0.1);
+  border-color: 1px rgba(0, 0, 0, 0.1);
+  padding: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-cross-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-cross:hover,
@@ -646,6 +653,7 @@ button {
   padding-left: 38px;
   background-color: transparent;
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus {
@@ -657,7 +665,7 @@ button {
 }
 
 .modal-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .form-label-icon {
@@ -666,13 +674,18 @@ button {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-label {
-  display: flex;
+  display: block;
+  margin-bottom: 4px;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: #8e8f99;
 }
 .modal-textarea {
@@ -681,7 +694,19 @@ button {
   border-radius: 4px;
   height: 120px;
   padding: 16px 8px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
   background-color: transparent;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea:focus {
+  border-color: #4d5ae5;
 }
 
 .modal-textarea::placeholder {
@@ -691,6 +716,10 @@ button {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-field.checkbox {
+  margin-bottom: 24px;
 }
 
 .modal-input-cover {
@@ -707,6 +736,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1.17;
 }
 
 .check-element {
@@ -715,10 +745,13 @@ button {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-check:checked + .check-text .check-element {
