@@ -501,6 +501,7 @@ button {
   padding-left: 16px;
   background-color: transparent;
   outline: transparent;
+  margin-top: 16px;
 }
 
 .footer-input::placeholder {
@@ -524,7 +525,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-
+  margin-top: 16px;
   border-radius: 4px;
   padding: 8px 24px;
   width: 165px;
