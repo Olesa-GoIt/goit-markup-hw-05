@@ -609,7 +609,7 @@ button {
   height: 24px;
   background-color: #e7e9fc;
   padding: 0;
-  border-color: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 
   display: flex;
   align-items: center;
@@ -626,7 +626,7 @@ button {
 .modal-cross:hover,
 .modal-cross:focus {
   background-color: #404bbf;
-  border-color: none;
+  border: none;
 }
 
 .modal-cross:hover .modal-cross-icon,
@@ -717,6 +717,10 @@ button {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-field.textarea {
+  margin-bottom: 16px;
 }
 
 .modal-field.checkbox {
