@@ -305,13 +305,13 @@ button {
 
 .team-text {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .icon-soc-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 8px;
 }
 
 .icon-soc-item {
@@ -385,7 +385,7 @@ button {
 }
 
 .portfolio-item:hover .portfolio-thumb-text {
-  transform: translateY (0%);
+  transform: translateY(0%);
 }
 
 .portfolio-item {
@@ -431,6 +431,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  margin-bottom: 16px;
 }
 
 .footer-container {
